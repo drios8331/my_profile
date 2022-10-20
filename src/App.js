@@ -4,7 +4,11 @@ export function App() {
   return (
     // <GlobalContextProvider>
       <>
-        <Skill/>
+        <Skill name="PhP" imagen="Ajax.png"/>
+        <Skill name="Javascript"/>
+        <Skill name="Mysql"/>
+        <Skill name="npm"/>
+        <Skill name="Ajax"/>
       </>
     // </GlobalContextProvider>
   );

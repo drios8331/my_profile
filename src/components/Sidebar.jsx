@@ -1,6 +1,7 @@
 
-function Sidebar() {
+function Sidebar(props) {
   return (
+    
     <div>Sidebar</div>
   )
 }

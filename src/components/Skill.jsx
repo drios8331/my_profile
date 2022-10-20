@@ -1,17 +1,17 @@
 import { skills } from "./../skills";
-import card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 
-console.log(skills);
-function Skill() {
-  // const [skills, setSkills] = useState([]);
+const imageSkill = require.context('../assets/', true);
 
+function Skill({imagen, name}) {
+  // const [skills, setSkills] = useState([]);
+  
   return(
     <>
       <div className="card">
           <div className="card-body">
-              <img src="./assets/Ajax.png" alt=""/>
-              <h3>nombre</h3>
+              <img src={imageSkill(`${imagen}`)} alt=""/>
+              <h3>{name}</h3>
           </div>
       </div>
     </>
