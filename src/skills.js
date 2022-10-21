@@ -2,56 +2,56 @@ export const skills = [
   {
     id: 0,
     name: "HTML",
-    image: "url()",
+    image: "HTML5",
   },
   {
     id: 1,
     name: "CSS",
-    image: "url()",
+    image: "CSS",
   },
   {
     id: 2,
     name: "JavaScript",
-    image: "url()",
+    image: "JavaScript",
   },
   {
     id: 3,
     name: "PhP",
-    image: "url()",
+    image: "PHP",
   },
   {
     id: 4,
     name: "SQL/MySQL",
-    image: "url()",
+    image: "mysql",
   },
   {
     id: 5,
     name: "Laravel",
-    image: "url()",
+    image: "Laravel",
   },
   {
     id: 6,
     name: "React JS",
-    image: "url()",
+    image: "React",
   },
   {
     id: 7,
     name: "Git/Github",
-    image: "url()",
+    image: "github",
   },
   {
     id: 8,
     name: "npm",
-    image: "url()",
+    image: "npm",
   },
   {
     id: 9,
     name: "Composer",
-    image: "url()",
+    image: "composer",
   },
   {
     id: 10,
     name: "Excel",
-    image: "url()",
+    image: "Excel",
   },
 ];
