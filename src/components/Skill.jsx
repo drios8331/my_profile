@@ -1,47 +1,26 @@
-import { skills as data } from "./../skills";
-import { useState, useEffect } from "react";
-// import imagen from '../assets/Ajax.png'
-// import {useParams, Redirect} from 'react-router-dom';
-const imageSkill = require.context("../assets", true);
-// console.log(skills);
-function SkillList({ name }) {
-    const [skills, setSkills] = useState([]);
+const imageSkill = require.context('../assets/imagSkills', true);
 
-    useEffect(() => {
-        setSkills(data);
-    }, []);
+function SkillList({name}) {
 
-    if (skills.length === 0) {
-        return <h1>No hay habilidades ahun</h1>;
-    }
-    // const {imagen} = useParams();
-
-    return (
-        <div>
-            {skills.map((skill) => (
-                <div className="card" key={skill.id}>
-                    <div className="card-body text-center bg-secondary">
-                        <div className="col-2 bg-white rounded-circle d-flex justify-content-center">
-                            <img
-                                src={imageSkill(`./${skill.image}.png`)}
-                                className="img-fluid"
-                                width="20%"
-                            />
-                        </div>
-                            <h3>{skill.name}</h3>
-                            {/* <h3>{imagen}</h3> */}
-                            {/* <div>Skill</div> */}
-                    </div>
-                </div>
-            ))}
+  return (
+    <div>
+      <div className="card mb-2">
+        <div className="card-body text-center bg-secondary pb-0 d-flex justify-content-center">
+          <div className="col">
+            <div className="row">
+              <div className="bg-white rounded-circle d-flex justify-content-center">
+                <img src={imageSkill(`./${name}.png`)} className="img-fluid" width="80%" alt="" />
+              </div>
+            </div>
+            <div className="row">
+              <h5>{name}</h5>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 
-    // useEffect(() => {
-    //   setSkills(skills);
-    // }, []);
-
-    // return <div>{(skills.map = (skill) => <div>Skill</div>)}</div>;
 }
 
 export default SkillList;
