@@ -1,5 +1,6 @@
-const imageSkill = require.context('../assets/imagSkills', true);
+const imageSkill = require.context("../assets/imagSkills", true);
 
+<<<<<<< HEAD
 function SkillList({name}) {
 
   return (
@@ -10,12 +11,8 @@ function SkillList({name}) {
             <div className="row d-inline-flex">
                 <img src={imageSkill(`./${name}.png`)} className=""alt="" />
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  );
-
+    );
 }
 
 export default SkillList;
