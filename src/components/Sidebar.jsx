@@ -5,15 +5,16 @@ function Sidebar({ clases }) {
     <div className={clases}>
       <Skill name="HTML5" />
       <Skill name="CSS" />
-      <Skill name="PHP" />
+      <Skill name="PhP" />
+      <Skill name="Bootstrap" />
       <Skill name="MySQL" />
       <Skill name="JavaScript" />
       <Skill name="Laravel" />
-      <Skill name="React" />
+      <Skill name="ReactJS" />
       <Skill name="Ajax" />
       <Skill name="JQuery" />
       <Skill name="Github" />
-      <Skill name="composer" />
+      <Skill name="Composer" />
       <Skill name="npm" />
       <Skill name="Excel" />
     </div>
