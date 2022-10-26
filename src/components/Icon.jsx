@@ -1,9 +1,11 @@
-import React from 'react'
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-function Icon() {
+function Icons({classContent, content, classIcon, classText}) {
   return (
-    <div>Icon</div>
-  )
+    <div className={classContent}>
+      <i className={classIcon}><span className={classText}>{content}</span></i>
+    </div>
+  );
 }
 
-export default Icon
+export default Icons;

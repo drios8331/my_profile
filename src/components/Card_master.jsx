@@ -1,11 +1,9 @@
 import "../style.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import * as Icon from "react-bootstrap-icons";
 import Image from "./Image";
 import Title from "./Title";
 import Parrafo from "./Parrafo";
-import SubTitle from "./SubTitle";
-// const image = require.context("../assets/imagSkills", true);
+import Icons from "./Icon";
 
 function CardMaster({ imagen, title, p }) {
   return (
@@ -26,21 +24,23 @@ function CardMaster({ imagen, title, p }) {
         </div>
         <div className="row text-center">
           <div className="col">
-            <Icon.GeoAlt/>
-            <SubTitle
-              classContent="row"
-              classSubTitle="mt-3 profyle fs-5 fw-bold"
-              subTitle="Medellin - Antioquia"
+            <Icons
+              classContent="row mt-3 profyle fs-5 fw-bold"
+              classIcon="bi bi-geo-alt-fill m-0 p-0 text-primary fs-3"
+              classText="text-dark fs-4"
+              content=" Medellin - Antioquia"
             />
-            <SubTitle
-              classContent="row"
-              classSubTitle="mt-3 profyle fs-5 fw-bold"
-              subTitle="Desarrollador FullStack"
+            <Icons
+              classContent="row mt-3 profyle fs-5 fw-bold"
+              classIcon="bi bi-person-workspace m-0 p-0 text-primary fs-3"
+              classText="text-dark fs-4"
+              content=" Desarrollador FullStack"
             />
-            <SubTitle
-              classContent="row"
-              classSubTitle="mt-3 profyle fs-5 fw-bold"
-              subTitle="Analisis y Desarrollo de Sistemas de Informacion (ADSI)"
+            <Icons
+              classContent="row mt-3 profyle fs-5 fw-bold"
+              classIcon="bi bi-mortarboard-fill m-0 p-0 text-primary fs-3"
+              classText="text-dark fs-4"
+              content=" Analisis y Desarrollo de Sistemas de Informacion (ADSI)"
             />
             <Parrafo
               classContent="row"
