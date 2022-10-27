@@ -32,6 +32,18 @@ function CardMaster({title, p }) {
             />
             <Icons
               classContent="row mt-3 profyle fs-5 fw-bold"
+              classIcon="bi bi-telephone-fill m-0 p-0 text-primary fs-3"
+              classText="text-dark fs-4"
+              content=" 3194813298"
+            />
+            <Icons
+              classContent="row mt-3 profyle fs-5 fw-bold"
+              classIcon="bi bi-envelope-check-fill m-0 p-0 text-primary fs-3"
+              classText="text-dark fs-4"
+              content=" davis.visitrack@gmail.com"
+            />
+            <Icons
+              classContent="row mt-3 profyle fs-5 fw-bold"
               classIcon="bi bi-person-workspace m-0 p-0 text-primary fs-3"
               classText="text-dark fs-4"
               content=" Desarrollador FullStack"

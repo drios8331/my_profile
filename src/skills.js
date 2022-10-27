@@ -55,3 +55,6 @@ export const skills = [
     image: "Excel",
   },
 ];
+
+
+
