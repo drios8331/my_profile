@@ -5,7 +5,7 @@ import Title from "./Title";
 import Parrafo from "./Parrafo";
 import Icons from "./Icon";
 
-function CardMaster({ imagen, title, p }) {
+function CardMaster({title, p }) {
   return (
     <div className="card hover-shadow">
       <div className="card-body p-5">
