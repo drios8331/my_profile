@@ -3,6 +3,7 @@ import CardMaster from "./components/Card_master";
 import CardExp from "./components/Card_experience";
 import CardStudy from "./components/Card_study";
 import Image from "./components/Image";
+import Coffe from './components/Coffe';
 import skills from "./skills";
 
 export function App() {
@@ -23,11 +24,13 @@ export function App() {
                         <CardExp title="Experiencia laboral" />
                         <br />
                         <CardStudy title="Educación" />
+                        <br/>
+                        <Coffe/>
                     </div>
                     <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 mt-5">
                         <Sidebar />
                     </div>
-                        <Image nameImage="Coffe" classImage="position-absolute" styleImage={{width: "10%", margin: "82%"}}/>
+                        <Image nameImage="Coffe" classImage="position-absolute" styleImage={{width: "10%", margin: "auto"}}/>
                 </div>
             </div>
         </>
