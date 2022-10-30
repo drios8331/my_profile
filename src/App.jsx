@@ -5,6 +5,7 @@ import CardStudy from "./components/Card_study";
 import Coffe from "./components/Coffe";
 import BotonFloat from "./components/Boton_flotante";
 import Button_coffe from './components/Button_coffe'
+// import './script';
 import skills from "./skills";
 
 export function App() {

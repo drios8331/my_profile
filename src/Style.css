@@ -150,9 +150,24 @@ image-profyle {
   font-size: 25px;
 } */
 
+#button_coffe{
+  display: none;
+}
+
 .container_coffe{
   position: fixed;
   bottom: 50px;
   left: 50px;
 }
 
+.card-coffe{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#button_coffe:checked~ .card-coffe{
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
