@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 image-profyle {
   margin-top: 100px;
 }
@@ -8,24 +14,24 @@ image-profyle {
   text-align: justify;
 }
 
-.container_coffe,
+/* .container_coffe,
 .button_coffe,
 .nav_coffe {
   position: absolute;
-}
+} */
 
-.container_coffe {
+/* .container_coffe {
   margin: auto;
   top: 10%;
   left: 50%;
   margin-left: -20px;
-}
+} */
 
-#toggle{
+/* #toggle{
     display: none;
-}
+} */
 
-.button_coffe{
+/* .button_coffe{
     z-index: 999;
     width: 43px;
     height: 43px;
@@ -34,9 +40,9 @@ image-profyle {
     transition: all 0.5s ease-in-out;
     box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
+} */
 
-.button_coffe::before{
+/* .button_coffe::before{
     position: absolute;
     top: 20px;
     left: 9px;
@@ -45,9 +51,9 @@ image-profyle {
     height: 2px;
     background: #fff;
     transform: rotate(90deg);
-}
+} */
 
-.button_coffe::after{
+/* .button_coffe::after{
     position: absolute;
     top: 20px;
     left: 9px;
@@ -55,9 +61,9 @@ image-profyle {
     width: 25px;
     height: 2px;
     background: #fff;
-}
+} */
 
-.nav_coffe{
+/* .nav_coffe{
     transform: translateY(-10%);
     opacity: 0;
     top: 13px;
@@ -68,9 +74,9 @@ image-profyle {
     border-radius: 5px;
     transform: translateY(0%);
     box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
-}
+} */
 
-.nav_coffe a{
+/* .nav_coffe a{
     text-align: center;
     display: block;
     margin: 20px 0;
@@ -79,14 +85,74 @@ image-profyle {
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
+} */
 
-#toggle:checked ~ .nav_coffe{
+/* #toggle:checked ~ .nav_coffe{
     opacity: 1;
     transform: translateY(10%);
-}
+} */
 
-#toggle:checked ~ .button_coffe{
+/* #toggle:checked ~ .button_coffe{
     transform: rotate(135deg);
     box-shadow: 0 0 0 0 transparent;
+} */
+
+/* #toggle_button{
+  display: none;
+} */
+
+/* .container_button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+} */
+
+/* .form_button a, .icon-mas{
+  display: block;
+  text-decoration: none;
+  background: #cc2b2b;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500 ease;
+} */
+
+/* .form_button a:hover{
+  background: #fff;
+  color: #cc2b2b;
+} */
+
+/* .form_button a{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+} */
+
+/* #toggle_button:checked~ .form_button a{
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* .icon-mas{
+  cursor: pointer;
+  background: #f44141;
+  font-size: 23px;
+} */
+
+/* #toggle_button:checked~ .toggle_button .icon-mas{
+  transform: rotate(137deg);
+  transition: all 0.5s ease-in-out;
+  font-size: 25px;
+} */
+
+.container_coffe{
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
 }
+
