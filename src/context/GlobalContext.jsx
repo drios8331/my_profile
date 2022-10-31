@@ -5,7 +5,9 @@ export const GlobalContext = createContext();
 export function GlobalContextProvider(props) {
   return (
     <GlobalContext.Provider>
-      <div className="container-xxl bg-white h-100 col-12">{props.children}</div>
+      <div className="container-fluid container_principal bg-light">
+        {props.children}
+      </div>
     </GlobalContext.Provider>
   );
 }

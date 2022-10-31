@@ -1,7 +1,7 @@
 import { AlignCenter } from "react-bootstrap-icons";
 import Image from "./Image";
 
-function Experience({ imagen, nameEmpresa, nameCargo, date }) {
+function Experience({ imagen, nameEmpresa, nameCargo, date, estudio = "" }) {
   return (
     <>
       <div className="row">
@@ -15,6 +15,11 @@ function Experience({ imagen, nameEmpresa, nameCargo, date }) {
         <div className="col-lg-9 col-md-10 col-sm-11 text-start">
           <div className="row">
             <div className="col-12 px-0">{nameEmpresa}</div>
+            <div className="row">
+              <div className="col px-0">
+                <strong>{estudio}</strong>
+              </div>
+            </div>
             <div className="row">
               <div className="col px-0">
                 <strong>{nameCargo}</strong>

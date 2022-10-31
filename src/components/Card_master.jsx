@@ -40,7 +40,7 @@ function CardMaster({title, p }) {
               classContent="row mt-3 profyle fs-5 fw-bold"
               classIcon="bi bi-envelope-check-fill m-0 p-0 text-primary fs-3"
               classText="text-dark fs-4"
-              content=" davis.visitrack@gmail.com"
+              content=" david.visitrack@gmail.com"
             />
             <Icons
               classContent="row mt-3 profyle fs-5 fw-bold"
@@ -56,7 +56,7 @@ function CardMaster({title, p }) {
             />
             <Parrafo
               classContent="row"
-              classParrafo="mt-4 profyle"
+              classParrafo="mt-4 profyle fs-5"
               parrafo={p}
             />
           </div>

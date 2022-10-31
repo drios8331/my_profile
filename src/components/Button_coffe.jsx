@@ -3,6 +3,7 @@ import Image from "./Image";
 
 function Button_coffe() {
     const [ check, setCheck] = useState(false);
+    const [rotat, setRotate] = useState('0deg');
 
     // let check = false;
     return (
@@ -11,11 +12,11 @@ function Button_coffe() {
                 <input type="checkbox" id="button_coffe" checked={check} />
                 {/* <label htmlFor="button_coffe" className="button_button"></label> */}
 
-                <div className="card mb-3 card-coffe">
-                    <div className="card-header text-primary">
+                <div className="card mb-3 card-coffe shadow-lg">
+                    <div className="card-header bg-primary text-white text-center">
                         INVITAME A UN CAFÉ
                     </div>
-                    <div className="card-body">
+                    <div className="card-body ms-4">
                         <div className="form_coffe me-3">
                             <form action="" className="me-3">
                                 <div className="row">
@@ -76,33 +77,24 @@ function Button_coffe() {
                 </div>
 
                 <div className="button_image_coffe">
-                    <a href="#" id="btn_coffe" onClick={() => {
+                    <a href="#val" id="btn_coffe" onClick={() => {
                         const stateCheck = document.querySelector('#button_coffe');
                         if (stateCheck.checked === false) {
                             setCheck(true);
+                            setRotate('30deg');
                         } else {
                             setCheck(false);
+                            setRotate('0deg');
                         }
                     }}>
                         <Image
                             nameImage="Coffe"
-                            styleImage={{ width: "60px" }}
+                            classImage="imag_coffe"
+                            styleImage={{ width: "60px", rotate: rotat}}
                         />
                     </a>
                 </div>
             </div>
-
-            {/* <div className="container_button">
-                <input type="checkbox" name="" id="toggle_button" />
-                <label htmlFor="toggle_button" className="button_button"></label>
-                <a href="#">
-                    <Image
-                        nameImage="Coffe"
-                        classImage="position-absolute"
-                        styleImage={{ width: "3%", margin: "auto" }}
-                    />
-                </a>
-            </div> */}
         </>
     );
 }
