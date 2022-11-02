@@ -2,11 +2,12 @@ import Sidebar from "./components/Sidebar";
 import CardMaster from "./components/Card_master";
 import CardExp from "./components/Card_experience";
 import CardStudy from "./components/Card_study";
+import CardProyects from './components/Card_proyects';
 // import Coffe from "./components/Coffe";
 // import BotonFloat from "./components/Boton_flotante";
-import Button_coffe from "./components/Button_coffe";
+import ButtonCoffe from "./components/Button_coffe";
 // import './script';
-import skills from "./skills";
+// import skills from "./skills";
 
 export function App() {
   return (
@@ -23,16 +24,17 @@ export function App() {
                 p="Experiencia de 6 años en de cargos administrativos enfocados al manejo de sistemas informáticos, visionario y proactivo, con conocimientos avanzados en Sistemas Windows, Office, Internet, desarrollo de software (Laravel PhP, React JS, HTML, CSS, JavaScript, Bootstrap, Composer, npm, JQuery, Ajax), diseño y administración de BD(MySQL), manejo de Git / Github. Con capacidad de trabajo y actitud proactiva en el planteamiento, análisis y solución de problemas. Adecuadas relaciones interpersonales y habilidades para el trabajo en equipo."
                 title="David Rios Mejia"
               />
-              <br />
+              <hr />
               <CardExp title="Experiencia laboral" />
-              <br />
+              <hr />
               <CardStudy title="Educación" />
-              <br />
-              <Button_coffe className="position-absolute" />
+              <hr />
+              <ButtonCoffe className="position-absolute" />
+              <br/>
+              <CardProyects/>
             </div>
             <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 mt-5">
               <Sidebar className="position-relative" />
-              {/* <BotonFloat className="position-absolute"/> */}
             </div>
           </div>
         </div>
