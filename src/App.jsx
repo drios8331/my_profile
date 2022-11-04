@@ -55,11 +55,32 @@ export function App() {
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
                             />
                             <hr />
-                            {/* <CardProyects /> */}
+                            <CardProyects
+                                proyectName="AnalisisSeguridad"
+                                image1="Analisis01"
+                                image2="Analisis02"
+                                image3="Analisis03"
+                                title="Analisis de Seguridad"
+                                text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                            />
                             <hr />
-                            {/* <CardProyects /> */}
+                            <CardProyects
+                                proyectName="ControlAcceso"
+                                image1="Acceso01"
+                                image2="Acceso02"
+                                image3="Acceso03"
+                                title="Control de Acceso"
+                                text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                            />
                             <hr />
-                            {/* <CardProyects /> */}
+                            <CardProyects
+                                proyectName="GaleriaImagenes"
+                                image1="Galeria01"
+                                image2="Galeria02"
+                                image3="Galeria03"
+                                title="Galeria de Imagenes"
+                                text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                            />
                             <hr />
                             <CardOthers />
                             <ButtonCoffe className="position-absolute" />
