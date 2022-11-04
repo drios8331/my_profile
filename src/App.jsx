@@ -21,7 +21,7 @@ export function App() {
                             <CardMaster
                                 imagen="Foto_David"
                                 p="Experiencia de 6 años en de cargos administrativos enfocados al manejo de sistemas informáticos, visionario y proactivo, con conocimientos avanzados en Sistemas Windows, Office, Internet, desarrollo de software (Laravel PhP, React JS, HTML, CSS, JavaScript, Bootstrap, Composer, npm, JQuery, Ajax), diseño y administración de BD(MySQL), manejo de Git / Github. Con capacidad de trabajo y actitud proactiva en el planteamiento, análisis y solución de problemas. Adecuadas relaciones interpersonales y habilidades para el trabajo en equipo."
-                                title="David Rios Mejia"
+                                title="David Rios M.."
                             />
                             <hr />
                             <CardExp title="Experiencia laboral" />
