@@ -2,6 +2,7 @@
   "name": "my_profile",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://drios8331.github.io/my_profile/build",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
