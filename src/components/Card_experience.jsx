@@ -3,6 +3,7 @@ import "antd/dist/antd.min.css";
 import Title from "./Title";
 import { Timeline } from "antd";
 import Experience from "./Experience";
+import Card from './Card';
 // const image = require.context("../assets/imagOthers", true);
 
 function CardExp({ imagen, title, p }) {

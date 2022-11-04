@@ -9,7 +9,7 @@ function Card_Others() {
                     Otros Conocimientos
                 </div>
                 <div className="row mb-3">
-                    <div className="col-3 text-center pt-2">
+                    <div className="col-3 text-center pt-2 bg-light rounded-5">
                         <Image nameImage="dtr720" classImage="w-75" />
                     </div>
                     <div className="col-3 profyle">
@@ -18,7 +18,7 @@ function Card_Others() {
                         nobis, vero quo nostrum animi odio, voluptatem pariatur
                         excepturi voluptatibus voluptate eaque id ad neque?
                     </div>
-                    <div className="col-3 profyle text-center pt-4">
+                    <div className="col-3 profyle text-center pt-4 bg-light rounded-5">
                         <Image nameImage="Computador" classImage="w-75" />
                     </div>
                     <div className="col-3 profyle">
@@ -29,7 +29,7 @@ function Card_Others() {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-3 text-center pt-5">
+                    <div className="col-3 text-center pt-5 bg-light rounded-5">
                         <Image nameImage="Celular" classImage="w-50" />
                     </div>
                     <div className="col-3 profyle">

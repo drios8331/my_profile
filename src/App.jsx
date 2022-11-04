@@ -14,7 +14,7 @@ import ButtonCoffe from "./components/Button_coffe";
 export function App() {
     return (
         <>
-            <div className="container-xxl" style={{ height: "100%" }}>
+            <div className="container-xxl py-3" style={{ height: "100%" }}>
                 <div className="container-fluid">
                     <div className="row" style={{ paddingTop: "10%" }}>
                         <div className="col-xl-10 col-lg-10 col-md-8 col-sm-8 col-8 mt-5 position-relative">
