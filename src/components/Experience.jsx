@@ -11,7 +11,7 @@ function Experience({ imagen, nameEmpresa, nameCargo, date, estudio = "" }) {
             styleImage={{ width: "55px" }}
           />
         </div>
-        <div className="col-lg-9 col-md-10 col-sm-11 text-start">
+        <div className="col-lg-9 col-md-10 col-sm-11 text-start fs-5">
           <div className="row">
             <div className="col-12 px-0">{nameEmpresa}</div>
             <div className="row">

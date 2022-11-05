@@ -18,6 +18,14 @@ function Sidebar({ clases }) {
                 <Skill name="Composer" />
                 <Skill name="npm" />
                 <Skill name="Excel" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
+                <Skill name="blanck" />
             </div>
         </div>
     );

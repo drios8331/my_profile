@@ -34,7 +34,8 @@ export function App() {
                                 image2="FotoSlaider2"
                                 image3="FotoSlaider1"
                                 title="LYD System"
-                                text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                text="Sistema de ventas y administracion de inventarios, control de stocks, manejo de entradas y salidas, generacion de informes y administracion de indicadores"
+                                lenguaje="PhP Nativo"
                             />
                             <hr />
                             <CardProyects
@@ -44,6 +45,7 @@ export function App() {
                                 image3="Reservasok3"
                                 title="Reservas Vehiculares"
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                lenguaje="PhP Laravel"
                             />
                             <hr />
                             <CardProyects
@@ -53,6 +55,7 @@ export function App() {
                                 image3="Escoltas3"
                                 title="Control de Escoltas"
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                lenguaje="PhP Laravel"
                             />
                             <hr />
                             <CardProyects
@@ -62,6 +65,7 @@ export function App() {
                                 image3="Analisis03"
                                 title="Analisis de Seguridad"
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                lenguaje="PhP Nativo"
                             />
                             <hr />
                             <CardProyects
@@ -71,6 +75,7 @@ export function App() {
                                 image3="Acceso03"
                                 title="Control de Acceso"
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                lenguaje="PhP Nativo"
                             />
                             <hr />
                             <CardProyects
@@ -80,6 +85,7 @@ export function App() {
                                 image3="Galeria03"
                                 title="Galeria de Imagenes"
                                 text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda adipisci dolorem quas odio excepturi saepe officiis hic et, sint nesciunt nam, reiciendis dicta, omnis dolor ipsam numquam commodi eos!"
+                                lenguaje="React JS"
                             />
                             <hr />
                             <CardOthers />

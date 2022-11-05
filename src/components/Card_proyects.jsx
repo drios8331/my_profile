@@ -3,7 +3,7 @@ import Image from "./Image";
 import Card from "./Card";
 // import moduleName from 'module';
 
-function Card_proyects({proyectName, image1, image2, image3, title, text}) {
+function Card_proyects({proyectName, image1, image2, image3, title, text, lenguaje}) {
   return (
     <>
       <Card>
@@ -37,6 +37,8 @@ function Card_proyects({proyectName, image1, image2, image3, title, text}) {
           <div className="col-6">
             <div className="fs-3 text-center mb-3 bg-secondary rounded-2 text-white">{title}</div>
             <p className="fs-5 profyle">{text}</p>
+            <br/>
+            <p><strong>Herramientas usadas: </strong>{lenguaje}</p>
           </div>
         </div>
       </Card>
