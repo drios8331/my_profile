@@ -1,4 +1,4 @@
-export const skills = [
+const skills = [
   {
     id: 0,
     name: "HTML",
@@ -55,6 +55,3 @@ export const skills = [
     image: "Excel",
   },
 ];
-
-
-
