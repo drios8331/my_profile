@@ -1,43 +1,40 @@
+import React, { useState, useEffect } from "react";
 import Card from "./Card";
-import Image from "./Image";
+import Skill from "./Skill";
+import { others as data } from "../skills";
 
 function Card_Others() {
+    const [others, setOthers] = useState([]);
+
+    useEffect(() => {
+        setOthers(data);
+    }, []);
+
     return (
         <>
-            <Card>
+            <Card classCard="p-5">
                 <div className="fs-4 text-center fw-bold mb-3">
-                    Otros Conocimientos
+                    <h3 className="title_shadow">OTROS CONOCIMIENTOS</h3>
                 </div>
-                <div className="row mb-3">
-                    <div className="col-3 text-center pt-2 bg-light rounded-5">
-                        <Image nameImage="dtr720" classImage="w-75" />
-                    </div>
-                    <div className="col-3 profyle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos iure odit suscipit maiores repellendus vitae
-                        nobis, vero quo nostrum animi odio, voluptatem pariatur
-                        excepturi voluptatibus voluptate eaque id ad neque?
-                    </div>
-                    <div className="col-3 profyle text-center pt-4 bg-light rounded-5">
-                        <Image nameImage="Computador" classImage="w-75" />
-                    </div>
-                    <div className="col-3 profyle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos iure odit suscipit maiores repellendus vitae
-                        nobis, vero quo nostrum animi odio, voluptatem pariatur
-                        excepturi voluptatibus voluptate eaque id ad neque?
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col-3 text-center pt-5 bg-light rounded-5">
-                        <Image nameImage="Celular" classImage="w-50" />
-                    </div>
-                    <div className="col-3 profyle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos iure odit suscipit maiores repellendus vitae
-                        nobis, vero quo nostrum animi odio, voluptatem pariatur
-                        excepturi voluptatibus voluptate eaque id ad neque?
-                    </div>
+                <div className="row justify-content-center px-0 mx-0">
+                    {others.map((info) => (
+                        <div className="col-6 mb-3" key={info.id}>
+                            <Card classCard="p-3">
+                                <div className="row text-center m-3 fs-4 bg-secondary rounded-3 px-0 mx-0">
+                                    <div className="col">{info.title}</div>
+                                </div>
+                                <div className="row">
+                                    <div className="col rounded-5">
+                                        {/* <Image nameImage="dtr720" classImage="w-75" /> */}
+                                        <Skill name={info.image} />
+                                    </div>
+                                    <div className="col profyle fs-6">
+                                        {info.text}
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+                    ))}
                 </div>
             </Card>
         </>

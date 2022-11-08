@@ -1,62 +1,48 @@
-// import '../style.css';
+import React, { useState, useEffect } from "react";
 import "antd/dist/antd.min.css";
 import Title from "./Title";
 import { Timeline } from "antd";
 import Experience from "./Experience";
-// const image = require.context("../assets/imagOthers", true);
+import Card from "./Card";
+import { education as data } from "../skills";
 
-function Card({ imagen, title, p }) {
+function CardStudy({ title }) {
+    const [education, setEducation] = useState([]);
+
+    useEffect(() => {
+        setEducation(data);
+    }, []);
+
     return (
-        <div className="card hover-shadow">
-            <div className="card-body p-5  d-flex justify-content-center">
-                <div className="row">
-                    <div className="col-5 p-5 mt-5">
-                        <Title
-                            classContent="text-center pb-4 mt-5 me-5"
-                            title={title}
-                        />
-                    </div>
-                    <div className="col">
-                        <Timeline>
-                            <Timeline.Item>
+        <Card classCard="p-5">
+            <div className="row">
+                <div className="col-5 p-5 mt-5">
+                    <Title
+                        classContent="text-center pb-4 mt-5 me-5"
+                        ClassTitle="pt-3 title_shadow"
+                        title={title}
+                    />
+                </div>
+                <div className="col">
+                    <Timeline>
+                        {education.map((info) => (
+                            <Timeline.Item color={info.color} key={info.id}>
                                 <div className="row d-flex align-items-center">
                                     <Experience
-                                        imagen="Sena"
-                                        nameEmpresa="Sena"
-                                        estudio="Tecnólogo"
-                                        nameCargo="Análisis y Desarrollo de Sistemas de Información."
-                                        date="2022"
+                                        imagen={info.imagen}
+                                        nameEmpresa={info.nameEmpresa}
+                                        estudio={info.estudio}
+                                        nameCargo={info.nameCargo}
+                                        date={info.date}
                                     />
                                 </div>
                             </Timeline.Item>
-                            <Timeline.Item color="Green">
-                                <div className="row d-flex align-items-center">
-                                    <Experience
-                                        imagen="politecnico_mayor"
-                                        nameEmpresa="Politécnico Mayor"
-                                        estudio="Técnico"
-                                        nameCargo="Asistente en Sistemas"
-                                        date="2019"
-                                    />
-                                </div>
-                            </Timeline.Item>
-                            <Timeline.Item color="Red">
-                                <div className="row d-flex align-items-center">
-                                    <Experience
-                                        imagen="compuestudio"
-                                        nameEmpresa="Compuestudio Ltda."
-                                        estudio="Técnico"
-                                        nameCargo="Administración de Empresas"
-                                        date="2008"
-                                    />
-                                </div>
-                            </Timeline.Item>
-                        </Timeline>
-                    </div>
+                        ))}
+                    </Timeline>
                 </div>
             </div>
-        </div>
+        </Card>
     );
 }
 
-export default Card;
+export default CardStudy;

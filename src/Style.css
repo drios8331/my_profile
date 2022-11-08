@@ -1,44 +1,50 @@
 .container_principal {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 image-profyle {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .profyle {
-  margin: 0;
-  text-align: justify;
+    margin: 0;
+    text-align: justify;
 }
 
 #button_coffe {
-  display: none;
+    display: none;
 }
 
 .container_coffe {
-  position: fixed;
-  bottom: 50px;
-  left: 50px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
 }
 
 .card-coffe {
-  margin-bottom: -15px;
-  opacity: 0;
-  visibility: hidden;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 #button_coffe:checked ~ .card-coffe {
-  margin-bottom: 10px;
-  opacity: 1;
-  visibility: visible;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
 }
 
-.imag_coffe, .card-coffe{
-  transition: all 700ms ease;
+.imag_coffe,
+.card-coffe {
+    transition: all 700ms ease;
+}
+
+.title_shadow {
+    text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5),
+        4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
 }

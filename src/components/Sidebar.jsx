@@ -1,31 +1,22 @@
+import React, { useState, useEffect } from "react";
 import Skill from "./Skill";
+import { skills as data } from "../skills";
 
 function Sidebar({ clases }) {
+    const [skills, setSkills] = useState([]);
+
+    useEffect(() => {
+        setSkills(data);
+    }, []);
+
     return (
         <div className={clases}>
             <div className="col">
-                <Skill name="HTML5" />
-                <Skill name="CSS" />
-                <Skill name="PhP" />
-                <Skill name="Bootstrap" />
-                <Skill name="MySQL" />
-                <Skill name="JavaScript" />
-                <Skill name="Laravel" />
-                <Skill name="ReactJS" />
-                <Skill name="Ajax" />
-                <Skill name="JQuery" />
-                <Skill name="Github" />
-                <Skill name="Composer" />
-                <Skill name="npm" />
-                <Skill name="Excel" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
-                <Skill name="blanck" />
+                {skills.map((skill) => (
+                    <div key={skill.id}>
+                        <Skill name={skill.name} />
+                    </div>
+                ))}
             </div>
         </div>
     );

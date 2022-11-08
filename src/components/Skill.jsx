@@ -1,5 +1,4 @@
 import Image from './Image';
-// const imageSkill = require.context("../assets/imagSkills", true);
 
 function SkillList({ name }) {
   return (
@@ -9,7 +8,6 @@ function SkillList({ name }) {
           <div className="col d-flex justify-content-center">
             <div className="row d-inline-flex">
               <Image nameImage={name}/>
-              {/* <img src={imageSkill(`./${name}.png`)} className="" alt="" /> */}
             </div>
           </div>
         </div>
