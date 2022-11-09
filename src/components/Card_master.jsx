@@ -26,8 +26,7 @@ function CardMaster({ title, p }) {
                     />
                 </div>
                 <Title
-                    classContent="col-sm-12 col-md-8 col-lg-8 text-end"
-                    // ClassTitle="title_shadow"
+                    classContent="col-sm-12 col-md-8 col-lg-8 text-end text-decoration-underline"
                     title={title}
                 />
             </div>
