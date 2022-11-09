@@ -56,7 +56,7 @@ export function App() {
                             <CardOthers />
                             <ButtonCoffe className="position-absolute" />
                         </div>
-                        <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 mt-5 px-0 rounded-3">
+                        <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 mt-5 px-0 rounded-3 bg-white">
                             <Sidebar className="position-relative" />
                         </div>
                     </div>

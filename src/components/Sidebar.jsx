@@ -14,7 +14,7 @@ function Sidebar({ clases }) {
             <div className="col">
                 {skills.map((skill) => (
                     <div key={skill.id}>
-                        <Skill name={skill.name} />
+                        <Skill name={skill.name} classSkill="border-0" />
                     </div>
                 ))}
             </div>

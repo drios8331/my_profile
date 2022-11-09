@@ -14,7 +14,7 @@ function CardExp({ title }) {
     }, []);
 
     return (
-        <Card style="d-flex justify-content-center" classCard="p-5">
+        <Card classCard="p-5">
             <div className="row text-center">
                 <div className="col-5 p-5">
                     <Title

@@ -20,15 +20,15 @@ function Card_Others() {
                     {others.map((info) => (
                         <div className="col-6 mb-3" key={info.id}>
                             <Card classCard="p-3">
-                                <div className="row text-center m-3 fs-4 bg-secondary rounded-3 px-0 mx-0">
-                                    <div className="col">{info.title}</div>
+                                <div className="row text-center m-3 fs-4 rounded-3 px-0 mx-0" style={{background: "rgba(155,155,155,0.7)"}}>
+                                    <div className="col-12 text-white">{info.title}</div>
                                 </div>
                                 <div className="row">
-                                    <div className="col rounded-5">
+                                    <div className="col-6 rounded-5">
                                         {/* <Image nameImage="dtr720" classImage="w-75" /> */}
                                         <Skill name={info.image} />
                                     </div>
-                                    <div className="col profyle fs-6">
+                                    <div className="col-6 profyle fs-6">
                                         {info.text}
                                     </div>
                                 </div>

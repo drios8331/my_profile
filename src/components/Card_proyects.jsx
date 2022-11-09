@@ -92,7 +92,7 @@ function Card_proyects({
                         </div>
                     </div>
                     <div className="col-6">
-                        <div className="fs-3 text-center mb-3 bg-secondary rounded-2 text-white">
+                        <div className="fs-3 text-center mb-3 rounded-2 text-white" style={{background: "rgba(155,155,155,0.7)"}}>
                             {title}
                         </div>
                         <div
@@ -106,7 +106,7 @@ function Card_proyects({
                         </div>
                         <br />
                         <p>
-                            <strong>Herramientas usadas: </strong>
+                            <strong>Tecnologias: </strong>
                             {lenguaje}
                         </p>
                     </div>
